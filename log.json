@@ -1,0 +1,41 @@
+{
+  "formats": [
+    {
+      "name": "default",
+      "pattern": ""
+    },
+    {
+      "name": "pattern",
+      "pattern": "%d{yyyy-MM-dd HH:mm:ss} [%-5p] %c{1}:%L - %m%n"
+    }
+  ],
+  "loggers": [
+    {
+      "name": "bulldogSDK",
+      "level": "debug",
+      "appender": "file",
+      "format": "pattern"
+    },
+    {
+      "name": "GTUser",
+      "level": "debug",
+      "appender": "console",
+      "format": "default"
+    },
+    {
+      "name": "default",
+      "level": "debug",
+      "appender": "console",
+      "format": "default"
+    }
+  ],
+  "appenders": [
+    {
+      "name": "file",
+      "fileName": "demo.txt"
+    },
+    {
+      "name": "console"
+    }
+  ]
+}
